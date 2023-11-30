@@ -1,1 +1,15 @@
-site_name: My Docs
+site_name: unclean数据集合成效果对比clean数据集
+
+theme:
+  name: material
+  features:
+    - content.tabs
+
+nav:
+  - 中文合成: index.md
+  # 在这里添加更多页面，如果需要
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/lunar333/vits-japanese-finetune.git
