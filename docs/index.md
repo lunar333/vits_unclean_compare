@@ -1,7 +1,4 @@
----
-hide:
-  - toc
----
+
 ### unclean和clean都跑了20万步
 ### 其中unclean一共有40万条音频，clean有20多万条音频
 
