@@ -1,0 +1,604 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="index2/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.14">
+    
+    
+      
+        <title>unclean数据集合成效果对比clean数据集</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.fad675c6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#api" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="unclean数据集合成效果对比clean数据集" class="md-header__button md-logo" aria-label="unclean数据集合成效果对比clean数据集" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            unclean数据集合成效果对比clean数据集
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              中文合成
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+    
+  
+  中文合成
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="index2/" class="md-tabs__link">
+        
+  
+    
+  
+  语音识别测试
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="unclean数据集合成效果对比clean数据集" class="md-nav__button md-logo" aria-label="unclean数据集合成效果对比clean数据集" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    unclean数据集合成效果对比clean数据集
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    中文合成
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    中文合成
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      一句话英文语音识别api 测试
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uncleanclean20" class="md-nav__link">
+    <span class="md-ellipsis">
+      unclean和clean都跑了20万步
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unclean40clean20" class="md-nav__link">
+    <span class="md-ellipsis">
+      其中unclean一共有40万条音频，clean有20多万条音频
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    语音识别测试
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      一句话英文语音识别api 测试
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uncleanclean20" class="md-nav__link">
+    <span class="md-ellipsis">
+      unclean和clean都跑了20万步
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unclean40clean20" class="md-nav__link">
+    <span class="md-ellipsis">
+      其中unclean一共有40万条音频，clean有20多万条音频
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>中文合成</h1>
+
+<h3 id="api">一句话英文语音识别api 测试</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">测试语音</th>
+<th style="text-align: center;">正确文本</th>
+<th style="text-align: center;">识别文本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><audio controls><source src="./asr_audio/114_129317_000065_000002.wav" type="audio/mpeg"></audio></td>
+<td style="text-align: center;">The melancholy which had seemed to the sad eyes of the anxious boy to hang, for days past, over every object, beautiful as all were, was dispelled by magic.</td>
+<td style="text-align: center;">the melancholy which had seemed to the sad eyes of the anxious boy to hang for days past over every object beautiful as all were was dispelled by magic</td>
+</tr>
+<tr>
+<td style="text-align: center;"><audio controls><source src="./asr_audio/114_129317_000065_000005.wav" type="audio/mpeg"></audio></td>
+<td style="text-align: center;">Men who look on nature, and their fellow men, and cry that all is dark and gloomy, are in the right; but the sombre colours are reflections from their own jaundiced eyes and hearts.</td>
+<td style="text-align: center;">men who look on nature and their fellow men and cry that all is dark and gloomy are in the right but the sombre colours are reflections from their own jaundiced eyes</td>
+</tr>
+<tr>
+<td style="text-align: center;"><audio controls><source src="./asr_audio/114_129317_000065_000006.wav" type="audio/mpeg"></audio></td>
+<td style="text-align: center;">The real hues are delicate, and need a clearer vision.</td>
+<td style="text-align: center;">the real hues are delicate and need a clearer vision</td>
+</tr>
+<tr>
+<td style="text-align: center;"><audio controls><source src="./asr_audio/114_129317_000066_000000.wav" type="audio/mpeg"></audio></td>
+<td style="text-align: center;">It is worthy of remark, and Oliver did not fail to note it at the time, that his morning expeditions were no longer made alone.</td>
+<td style="text-align: center;">it is worthy of remark and oliver did not fail to note it at the time that his morning expeditions were no longer made alone</td>
+</tr>
+<tr>
+<td style="text-align: center;"><audio controls><source src="./asr_audio/114_129317_000066_000002.wav" type="audio/mpeg"></audio></td>
+<td style="text-align: center;">If Oliver were behindhand in these respects, he knew where the best were to be found; and morning after morning they scoured the country together, and brought home the fairest that blossomed.</td>
+<td style="text-align: center;">if oliver were behindhand in these respects he knew where the best were to be found and morning after morning they scoured the country together and brought home the fairest that blossomed</td>
+</tr>
+<tr>
+<td style="text-align: center;"><audio controls><source src="./asr_audio/114_129317_000066_000003.wav" type="audio/mpeg"></audio></td>
+<td style="text-align: center;">The window of the young lady's chamber was opened now; for she loved to feel the rich summer air stream in, and revive her with its freshness; but there always stood in water, just inside the lattice, one particular little bunch, which was made up with great care, every morning.</td>
+<td style="text-align: center;">the window of the young lady's chamber was opened now for she loved to feel the rich summer air stream in and revive her with its freshness but there always stood in water just inside the lattice one particular little bunch which was made up with great care every morning</td>
+</tr>
+<tr>
+<td style="text-align: center;"><audio controls><source src="./asr_audio/114_129317_000066_000004.wav" type="audio/mpeg"></audio></td>
+<td style="text-align: center;">Oliver could not help noticing that the withered flowers were never thrown away, although the little vase was regularly replenished; nor, could he help observing, that whenever the doctor came into the garden, he invariably cast his eyes up to that particular corner, and nodded his head most expressively, as he set forth on his morning's walk.</td>
+<td style="text-align: center;">oliver could not help noticing that the withered flowers were never thrown away although the little vase was regularly replenished nor could he help observing that whenever the doctor came into the garden he invariably cast his eyes up to that particular corner and nodded his head most expressively as he set forth on his morning's walk</td>
+</tr>
+<tr>
+<td style="text-align: center;"><audio controls><source src="./asr_audio/114_129317_000066_000005.wav" type="audio/mpeg"></audio></td>
+<td style="text-align: center;">Pending these observations, the days were flying by; and Rose was rapidly recovering.</td>
+<td style="text-align: center;">pending these observations the days were flying by and rose was rapidly recovering</td>
+</tr>
+<tr>
+<td style="text-align: center;"><audio controls><source src="./asr_audio/114_129317_000067_000000.wav" type="audio/mpeg"></audio></td>
+<td style="text-align: center;">Nor did Oliver's time hang heavy on his hands, although the young lady had not yet left her chamber, and there were no evening walks, save now and then, for a short distance, with Mrs. Maylie.</td>
+<td style="text-align: center;">nor did oliver's time hang heavy on his hands although the young lady had not yet left her chamber and there were no evening walks save now and then for a short distance with missus maylie</td>
+</tr>
+<tr>
+<td style="text-align: center;"><audio controls><source src="./asr_audio/114_129317_000067_000001.wav" type="audio/mpeg"></audio></td>
+<td style="text-align: center;">He applied himself, with redoubled assiduity, to the instructions of the white-headed old gentleman, and laboured so hard that his quick progress surprised even himself.</td>
+<td style="text-align: center;">he applied himself with redoubled assiduity to the instructions of the white headed old gentleman and labored so hard that his quick progress surprised even himself</td>
+</tr>
+<tr>
+<td style="text-align: center;"><audio controls><source src="./asr_audio/114_129317_000068_000000.wav" type="audio/mpeg"></audio></td>
+<td style="text-align: center;">The little room in which he was accustomed to sit, when busy at his books, was on the ground-floor, at the back of the house.</td>
+<td style="text-align: center;">the little room in which he was accustomed to sit when busy at his books was on the ground floor at the back of the house</td>
+</tr>
+</tbody>
+</table>
+<h3 id="uncleanclean20">unclean和clean都跑了20万步</h3>
+<h3 id="unclean40clean20">其中unclean一共有40万条音频，clean有20多万条音频</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">角色</th>
+<th style="text-align: center;">测试文本</th>
+<th style="text-align: center;">unclean合成语音</th>
+<th style="text-align: center;">clean合成语音</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">data_part_1/人文读书声</td>
+<td style="text-align: center;">如今听到许诺这么说，他心头一紧：“你喜欢他？”“其实我跟他更多的是亲情，”许诺说，“我们从小一块长大，知根知底，现在又是合伙人，如果非要找个人结婚的话，他是一个不错的选择。”李晏清差点脱口而出，我们也认识很久了，我也是一个不错的选择。但他理智还在，她跟他认识再久，也比不上与她青梅竹马的师兄。</td>
+<td style="text-align: center;"><audio controls><source src="./audio/1.wav" type="audio/mpeg"></audio></td>
+<td style="text-align: center;"><audio controls><source src="./audio/1_clean.wav" type="audio/mpeg"></audio></td>
+</tr>
+<tr>
+<td style="text-align: center;">data_part_1/人文读书声</td>
+<td style="text-align: center;">望着测验魔石碑上面闪亮得甚至有些刺眼的五个大字，少年面无表情，唇角有着一抹自嘲，紧握的手掌，因为大力，而导致略微尖锐的指甲深深的刺进了掌心之中，带来一阵阵钻心的疼痛。</td>
+<td style="text-align: center;"><audio controls><source src="./audio/2.wav" type="audio/mpeg"></audio></td>
+<td style="text-align: center;"><audio controls><source src="./audio/2_clean.wav" type="audio/mpeg"></audio></td>
+</tr>
+<tr>
+<td style="text-align: center;">data_part_1/一本正经的肖昊</td>
+<td style="text-align: center;">周围传来的不屑嘲笑以及惋惜轻叹，落在那如木桩待在原地的少年耳中，恍如一根根利刺狠狠的扎在心脏一般，让得少年呼吸微微急促。</td>
+<td style="text-align: center;"><audio controls><source src="./audio/3.wav" type="audio/mpeg"></audio></td>
+<td style="text-align: center;"><audio controls><source src="./audio/3_clean.wav" type="audio/mpeg"></audio></td>
+</tr>
+<tr>
+<td style="text-align: center;">data_part_1/一本正经的肖昊</td>
+<td style="text-align: center;">在那一片投射着被柳树枝叶切割而开的明亮光斑的空地中，数百道身影静静盘坐，这是一群略显青涩的少年少女，而此时，他们都是面目认真的微闭着双目，鼻息间的呼吸，呈现一种极有节奏之感，而随着呼吸的吐纳，他们的周身，仿佛是有着肉眼难辨的细微光芒出现。</td>
+<td style="text-align: center;"><audio controls><source src="./audio/4.wav" type="audio/mpeg"></audio></td>
+<td style="text-align: center;"><audio controls><source src="./audio/4_clean.wav" type="audio/mpeg"></audio></td>
+</tr>
+<tr>
+<td style="text-align: center;">data_part_1/Oo橙子oO</td>
+<td style="text-align: center;">石台下，一些少年突然悄悄的睁开眼睛，他们望着石台上那少年周身的光芒，皆是忍不住的舔舔嘴，脸庞上露出了一些羡慕钦佩之色，而后那股安静便是被他们的窃窃私语声开始打破。</td>
+<td style="text-align: center;"><audio controls><source src="./audio/5.wav" type="audio/mpeg"></audio></td>
+<td style="text-align: center;"><audio controls><source src="./audio/5_clean.wav" type="audio/mpeg"></audio></td>
+</tr>
+<tr>
+<td style="text-align: center;">data_part_1/Oo橙子oO</td>
+<td style="text-align: center;">众多少年少女面面相觑，这事情在北灵院甚至整个北灵境也不算什么秘密，他们在对此感到遗憾的同时，又相当的好奇，他们很想知道，究竟是因为什么原因，这个出色得让同样有着几分傲气的他们都信服的牧哥，竟然会被那“灵路”主动的驱逐出来。</td>
+<td style="text-align: center;"><audio controls><source src="./audio/6.wav" type="audio/mpeg"></audio></td>
+<td style="text-align: center;"><audio controls><source src="./audio/6_clean.wav" type="audio/mpeg"></audio></td>
+</tr>
+<tr>
+<td style="text-align: center;">data_part_1/时代光华名师课堂</td>
+<td style="text-align: center;">众多少年少女面面相觑，这事情在北灵院甚至整个北灵境也不算什么秘密，他们在对此感到遗憾的同时，又相当的好奇，他们很想知道，究竟是因为什么原因，这个出色得让同样有着几分傲气的他们都信服的牧哥，竟然会被那灵路主动的驱逐出来。</td>
+<td style="text-align: center;"><audio controls><source src="./audio/7.wav" type="audio/mpeg"></audio></td>
+<td style="text-align: center;"><audio controls><source src="./audio/7_clean.wav" type="audio/mpeg"></audio></td>
+</tr>
+<tr>
+<td style="text-align: center;">data_part_1/时代光华名师课堂</td>
+<td style="text-align: center;">众多少年少女忙抬起头来，只见得石台上修炼中的少年已经睁开了双目，漆黑的双目犹如夜空，其中灵气十足，在其嘴角，也是噙着一抹笑容，那笑容阳光而柔和，犹如点睛之笔一般，令得少年的面目，变得有些帅气起来。</td>
+<td style="text-align: center;"><audio controls><source src="./audio/8.wav" type="audio/mpeg"></audio></td>
+<td style="text-align: center;"><audio controls><source src="./audio/8_clean.wav" type="audio/mpeg"></audio></td>
+</tr>
+<tr>
+<td style="text-align: center;">data_part_50/九河书场</td>
+<td style="text-align: center;">如今听到许诺这么说，他心头一紧：“你喜欢他？”“其实我跟他更多的是亲情，”许诺说，“我们从小一块长大，知根知底，现在又是合伙人，如果非要找个人结婚的话，他是一个不错的选择。”李晏清差点脱口而出，我们也认识很久了，我也是一个不错的选择。但他理智还在，她跟他认识再久，也比不上与她青梅竹马的师兄。</td>
+<td style="text-align: center;"><audio controls><source src="./audio/9.wav" type="audio/mpeg"></audio></td>
+<td style="text-align: center;"><audio controls><source src="./audio/9_clean.wav" type="audio/mpeg"></audio></td>
+</tr>
+<tr>
+<td style="text-align: center;">data_part_50/九河书场</td>
+<td style="text-align: center;">就是这个神秘冷漠，修炼起来让人感到疯狂的少女，在那灵路中，莫名其妙的追杀了他大半年，而那让得牧尘咬牙切齿的理由是他救了她一次。</td>
+<td style="text-align: center;"><audio controls><source src="./audio/10.wav" type="audio/mpeg"></audio></td>
+<td style="text-align: center;"><audio controls><source src="./audio/10_clean.wav" type="audio/mpeg"></audio></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/lunar333/vits-japanese-finetune.git" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.tabs.sticky"], "search": "assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.cd18aaf1.min.js"></script>
+      
+    
+  </body>
+</html>
